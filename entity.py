@@ -1,8 +1,9 @@
 class Entity:
-    def __init__(self, max_hp, attack, speed):
+    def __init__(self, max_hp, attack, magic, speed):
         self.max_hp = max_hp
         self.hp = max_hp
         self.attack = attack
+        self.magic = magic
         self.speed = speed
 
         # vulnerable
@@ -11,10 +12,15 @@ class Entity:
     def is_alive(self):
             return self.hp > 0
     
-    def attack_enemy(self, enemy):
+    def melee_attack(self, enemy):
         self.vulnerable = True
         if enemy.vulnerable:
             enemy.hp -= self.attack
+
+    def magic_attack(self, enemy):
+        self.vulnerable = True
+        if enemy.vulnerable:
+            enemy.hp -= self.magic
 
     def heal(self):
         self.hp += 20
