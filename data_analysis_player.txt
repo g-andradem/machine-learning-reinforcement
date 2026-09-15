@@ -1,0 +1,4 @@
+Player Wins: 510
+Enemy Wins: 490
+Player_Damage: 3588600
+Enemy_Damage: 3589020
