@@ -5,4 +5,4 @@ ACTIONS = [
     # heal
 ]
 
-NUM_BATTLE = 100000
+NUM_BATTLE = 10000
