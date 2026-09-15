@@ -5,7 +5,7 @@ class Player(Entity):
         self.stats = {
             'health': 300, 
             'attack': 40,
-            'magic': 4,
+            'magic': 30,
             'speed': 7
         }
 

@@ -24,7 +24,7 @@ def set_turn_order(player, enemy):
 def battle(agent, data, speed_enemy):
     # INICIALIZAR ENTITYS
     player = Player()
-    enemy = Enemy()
+    enemy = Enemy(speed_enemy)
 
     data_battle = []
 
@@ -47,8 +47,8 @@ def battle(agent, data, speed_enemy):
 
         # ENEMY CHOICE ACTIONS
         # Ação do inimigo escolhida pelo ML
-        enemy_action = agent.choose_action(state)
-        # enemy_action = random.choice(ACTIONS)
+        # enemy_action = agent.choose_action(state)
+        enemy_action = random.choice(ACTIONS)
 
         for character in turn_order:
             if character == player:
@@ -59,6 +59,8 @@ def battle(agent, data, speed_enemy):
                     elif player_action == 'magic_attack':
                         player.magic_attack(enemy)
                         data[2] += player.attack
+                    elif player_action == 'defend':
+                        player.defend()
             else:
                 if enemy.is_alive():
                     if enemy_action == 'melee_attack':
@@ -67,7 +69,8 @@ def battle(agent, data, speed_enemy):
                     elif enemy_action == 'magic_attack':
                         enemy.magic_attack(player)
                         data[3] += enemy.attack
-
+                    elif enemy_action == 'defend':
+                        enemy.defend()
 
         data_battle.append({
             'turn': turn,

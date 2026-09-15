@@ -1,12 +1,12 @@
 from entity import Entity
 
 class Enemy(Entity):
-    def __init__(self):
+    def __init__(self, speed_enemy):
         self.stats = {
             'health': 300, 
-            'attack': 30,
-            'magic': 5,
-            'speed': 6
+            'attack': 35,
+            'magic': 40,
+            'speed': 6 + speed_enemy
         }
 
         super().__init__(

@@ -1,8 +1,8 @@
 ACTIONS = [
     'melee_attack',
-    'magic_attack'
+    'magic_attack',
     # 'defend',
     # heal
 ]
 
-NUM_BATTLE = 1000
+NUM_BATTLE = 100000
