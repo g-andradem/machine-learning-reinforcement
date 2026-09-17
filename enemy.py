@@ -6,12 +6,14 @@ class Enemy(Entity):
             'health': 300, 
             'attack': 35,
             'magic': 40,
+            'defese': 2,
             'speed': 6 + speed_enemy
         }
 
         super().__init__(
-            self.stats['health'],
-            self.stats['attack'],
-            self.stats['magic'],
-            self.stats['speed']
+            max_hp = self.stats['health'],
+            attack = self.stats['attack'],
+            magic = self.stats['magic'],
+            defese = self.stats['defese'],
+            speed = self.stats['speed']
         )

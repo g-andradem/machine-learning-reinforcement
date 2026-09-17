@@ -88,6 +88,13 @@ def battle(agent, data, speed_enemy):
         else:
             reward = 0
 
+        if not enemy.is_alive():
+            data[0] += 1
+        #     reward += -100
+        elif not player.is_alive():
+            data[1] += 1
+        #     reward += 100
+
         # ESTADO FINAL DO TURNO
         next_state = get_state(player, enemy)
 
@@ -106,13 +113,5 @@ def battle(agent, data, speed_enemy):
     # necessario que haja um pouco de aleatoriedade, mesmo que baixa
     if agent.epsilon > 0.05:
         agent.epsilon *= 0.995
-
-    # aplicar recompensa depois
-    if not enemy.is_alive():
-        data[0] += 1
-        reward = -100
-    elif not player.is_alive():
-        data[1] += 1
-        reward = 100
 
     return data_battle

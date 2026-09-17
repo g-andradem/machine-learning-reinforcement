@@ -6,14 +6,16 @@ class Player(Entity):
             'health': 300, 
             'attack': 40,
             'magic': 30,
+            'defese': 5,
             'speed': 7
         }
 
         super().__init__(
-            self.stats['health'],
-            self.stats['attack'],
-            self.stats['magic'],
-            self.stats['speed']
+            max_hp = self.stats['health'],
+            attack = self.stats['attack'],
+            magic = self.stats['magic'],
+            defese = self.stats['defese'],
+            speed = self.stats['speed']
         )
 
         

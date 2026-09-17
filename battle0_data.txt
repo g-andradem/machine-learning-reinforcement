@@ -1,0 +1,62 @@
+===== battle_0 =====
+
+Turn 0
+Player Hp: 265
+Player Action: melee_attack
+Enemy Hp: 262
+Enemy Action: magic_attack
+
+Turn 1
+Player Hp: 235
+Player Action: heal
+Enemy Hp: 262
+Enemy Action: melee_attack
+
+Turn 2
+Player Hp: 200
+Player Action: magic_attack
+Enemy Hp: 234
+Enemy Action: magic_attack
+
+Turn 3
+Player Hp: 165
+Player Action: magic_attack
+Enemy Hp: 206
+Enemy Action: magic_attack
+
+Turn 4
+Player Hp: 135
+Player Action: magic_attack
+Enemy Hp: 178
+Enemy Action: melee_attack
+
+Turn 5
+Player Hp: 105
+Player Action: heal
+Enemy Hp: 178
+Enemy Action: melee_attack
+
+Turn 6
+Player Hp: 70
+Player Action: melee_attack
+Enemy Hp: 140
+Enemy Action: magic_attack
+
+Turn 7
+Player Hp: 40
+Player Action: melee_attack
+Enemy Hp: 102
+Enemy Action: melee_attack
+
+Turn 8
+Player Hp: 5
+Player Action: heal
+Enemy Hp: 102
+Enemy Action: magic_attack
+
+Turn 9
+Player Hp: -25
+Player Action: heal
+Enemy Hp: 102
+Enemy Action: melee_attack
+
